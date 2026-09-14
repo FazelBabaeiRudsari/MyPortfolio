@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>فاضل بابایی | توسعه‌دهنده بازی و بک‌اند</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Vazirmatn Font -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+    }
+    .glow {
+      box-shadow: 0 0 25px rgba(99, 102, 241, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- نوبار -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-black text-xl tracking-tight text-indigo-400">
+        &lt;Fazel<span class="text-white">.Dev /&gt;</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-indigo-400 transition">درباره من</a>
+        <a href="#skills" class="hover:text-indigo-400 transition">مهارت‌ها</a>
+        <a href="#projects" class="hover:text-indigo-400 transition">پروژه‌ها و نمونه‌کارها</a>
+        <a href="#experience" class="hover:text-indigo-400 transition">سوابق</a>
+        <a href="#contact" class="hover:text-indigo-400 transition">تماس</a>
+      </nav>
+      <a href="#contact" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-xl transition shadow-lg shadow-indigo-600/30">
+        همکاری با من
+      </a>
+    </div>
+  </header>
+
+  <main class="pt-24">
+    <!-- بخش Hero -->
+    <section class="max-w-6xl mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center justify-between gap-12">
+      <div class="flex-1 space-y-6 text-center md:text-right">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-xs font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          آماده دریافت پروژه‌های جدید و چالش‌برانگیز
+        </div>
+        <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight text-white">
+          توسعه‌دهنده بازی‌های رایانه‌ای و <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">متخصص بک‌اند</span>
+        </h1>
+        <p class="text-slate-400 text-base md:text-lg leading-relaxed max-w-xl">
+          طراحی و پیاده‌سازی مکانیزم‌های پیچیده بازی در Unreal Engine (C++ / Blueprints) به همراه معماری بک‌اند مقیاس‌پذیر با Django و اتصال یکپارچه از طریق REST API.
+        </p>
+        <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
+          <a href="#projects" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg shadow-indigo-600/25 flex items-center gap-2">
+            مشاهده نمونه‌کارها <i class="fa-solid fa-arrow-left text-xs"></i>
+          </a>
+          <a href="#contact" class="border border-slate-700 hover:border-slate-500 text-slate-300 font-medium px-6 py-3 rounded-xl transition bg-slate-900/50">
+            دریافت رزومه PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- کارت ویژوال پروفایل -->
+      <div class="relative flex-shrink-0">
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-3xl bg-gradient-to-br from-indigo-500 to-cyan-500 p-1 glow">
+          <div class="w-full h-full bg-slate-900 rounded-[22px] flex flex-col items-center justify-center p-6 text-center border border-slate-800">
+            <div class="w-24 h-24 rounded-2xl bg-indigo-600/20 border border-indigo-500/40 flex items-center justify-center text-4xl text-indigo-400 mb-4">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white">فاضل بابایی</h3>
+            <p class="text-indigo-400 text-sm mt-1">Game Dev & Backend</p>
+            <div class="flex gap-4 mt-5 text-slate-400 text-lg">
+              <a href="#" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" class="hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- مهارت‌ها (Skills) -->
+    <section id="skills" class="border-y border-slate-800 bg-slate-900/40 py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">مهارت‌ها و فناوری‌ها</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900 hover:border-indigo-500/50 transition">
+            <i class="fa-solid fa-cubes text-3xl text-indigo-400 mb-3"></i>
+            <h3 class="font-bold text-lg text-white">Unreal Engine</h3>
+            <p class="text-xs text-slate-400 mt-1">C++, Blueprints, UMG & JNI</p>
+          </div>
+          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900 hover:border-indigo-500/50 transition">
+            <i class="fa-brands fa-python text-3xl text-emerald-400 mb-3"></i>
+            <h3 class="font-bold text-lg text-white">Django & Python</h3>
+            <p class="text-xs text-slate-400 mt-1">REST API, ORM, Auth & Admin</p>
+          </div>
+          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900 hover:border-indigo-500/50 transition">
+            <i class="fa-solid fa-network-wired text-3xl text-cyan-400 mb-3"></i>
+            <h3 class="font-bold text-lg text-white">Game Backend</h3>
+            <p class="text-xs text-slate-400 mt-1">VaRest, IAP (مایکت/بازار), Server Sync</p>
+          </div>
+          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900 hover:border-indigo-500/50 transition">
+            <i class="fa-solid fa-server text-3xl text-amber-400 mb-3"></i>
+            <h3 class="font-bold text-lg text-white">DevOps & Linux</h3>
+            <p class="text-xs text-slate-400 mt-1">Nginx, Gunicorn, PostgreSQL, Git</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- نمونه کارها (Projects) -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-indigo-400 text-sm font-semibold uppercase tracking-wider">نمونه کارها</span>
+          <h2 class="text-3xl md:text-4xl font-black mt-2">پروژه‌های شاخص</h2>
+        </div>
+        <p class="text-slate-400 max-w-md text-sm">مجموعه‌ای از بازی‌ها و سیستم‌هایی که از ایده تا پیاده‌سازی کامل فنی هدایت کرده‌ام.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- پروژه ۱ -->
+        <div class="border border-slate-800 bg-slate-900 rounded-3xl overflow-hidden hover:border-indigo-500/40 transition group">
+          <div class="h-48 bg-gradient-to-tr from-slate-800 to-indigo-950 flex items-center justify-center border-b border-slate-800 relative">
+            <i class="fa-solid fa-car-tunnel text-5xl text-indigo-400/60 group-hover:scale-110 transition duration-300"></i>
+            <span class="absolute top-4 right-4 bg-indigo-600/80 text-white text-xs px-2.5 py-1 rounded-full backdrop-blur-md">Mobile Game</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">بازی شبیه‌ساز گاراژ (Tycoon Simulation)</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+              بازی شبیه‌ساز مکانیکی و تیونینگ خودرو برای موبایل. شامل سیستم سفارش‌های مرحله‌ای، مدیریت شاگردها، مکانیزم‌های مجزای صافکاری، مکانیکی و نقاشی با رابط کاربری هیبریدی (Isometric / UMG Widgets).
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Unreal Engine</span>
+              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Django API</span>
+              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">In-App Purchase</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <a href="#" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-1.5">
+                مشاهده دمو و جزئیات <i class="fa-solid fa-arrow-left text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- پروژه ۲ -->
+        <div class="border border-slate-800 bg-slate-900 rounded-3xl overflow-hidden hover:border-indigo-500/40 transition group">
+          <div class="h-48 bg-gradient-to-tr from-slate-800 to-emerald-950 flex items-center justify-center border-b border-slate-800 relative">
+            <i class="fa-solid fa-plug-circle-bolt text-5xl text-emerald-400/60 group-hover:scale-110 transition duration-300"></i>
+            <span class="absolute top-4 right-4 bg-emerald-600/80 text-white text-xs px-2.5 py-1 rounded-full backdrop-blur-md">Backend & Plugin</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">سیستم جامع همگام‌سازی ابری و پرداخت موبایل</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+              بک‌اند مبتنی بر جنگو برای ذخیره ابری پیشرفت بازیکنان، مدیریت لیدربوردها و سیستم اعتبارسنجی خریدهای درون‌برنامه‌ای (Myket IAP) با اتصال مستقیم به کلاینت آنریل از طریق VaRest و JNI.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Django Rest Framework</span>
+              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">VaRest</span>
+              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Android JNI</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <a href="#" class="text-sm font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1.5">
+                مشاهده در گیت‌هاب <i class="fa-solid fa-arrow-left text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- تماس و ارتباط (Contact) -->
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-20 text-center">
+      <div class="border border-slate-800 bg-gradient-to-b from-slate-900 to-slate-950 p-8 md:p-14 rounded-3xl">
+        <h2 class="text-3xl font-black mb-4">آماده شروع یک پروژه مشترک هستید؟</h2>
+        <p class="text-slate-400 max-w-xl mx-auto text-sm md:text-base mb-8">
+          اگر نیاز به توسعه بازی، طراحی معماری کلاینت/سرور، یا مشاوره فنی در Unreal Engine و بک‌اند دارید، خوشحال می‌شوم با هم در ارتباط باشیم.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="mailto:your-email@example.com" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-envelope"></i> ارسال ایمیل
+          </a>
+          <a href="https://t.me/your_telegram_id" target="_blank" class="w-full sm:w-auto border border-slate-700 hover:border-slate-500 text-slate-200 font-semibold px-8 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-brands fa-telegram"></i> ارتباط در تلگرام
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© ۲۰۲۶ تمامی حقوق محفوظ است.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-slate-300 transition">GitHub</a>
+        <a href="#" class="hover:text-slate-300 transition">LinkedIn</a>
+        <a href="#" class="hover:text-slate-300 transition">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

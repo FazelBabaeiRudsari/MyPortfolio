@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>فاضل بابایی | توسعه‌دهنده بازی و بک‌اند</title>
+  
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome Icons -->
@@ -16,14 +17,14 @@
       font-family: 'Vazirmatn', sans-serif;
     }
     .glow {
-      box-shadow: 0 0 25px rgba(99, 102, 241, 0.25);
+      box-shadow: 0 0 30px rgba(99, 102, 241, 0.2);
     }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
 
-  <!-- نوبار -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+  <!-- هدر و نوبار -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/85 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#" class="font-black text-xl tracking-tight text-indigo-400">
         &lt;Fazel<span class="text-white">.Dev /&gt;</span>
@@ -31,8 +32,7 @@
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
         <a href="#about" class="hover:text-indigo-400 transition">درباره من</a>
         <a href="#skills" class="hover:text-indigo-400 transition">مهارت‌ها</a>
-        <a href="#projects" class="hover:text-indigo-400 transition">پروژه‌ها و نمونه‌کارها</a>
-        <a href="#experience" class="hover:text-indigo-400 transition">سوابق</a>
+        <a href="#projects" class="hover:text-indigo-400 transition">نمونه‌کارها و ویدیو</a>
         <a href="#contact" class="hover:text-indigo-400 transition">تماس</a>
       </nav>
       <a href="#contact" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-xl transition shadow-lg shadow-indigo-600/30">
@@ -41,50 +41,50 @@
     </div>
   </header>
 
-  <main class="pt-24">
-    <!-- بخش Hero -->
-    <section class="max-w-6xl mx-auto px-6 py-20 md:py-28 flex flex-col md:flex-row items-center justify-between gap-12">
+  <main class="pt-20">
+    <!-- بخش Hero / معرفی -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center justify-between gap-12">
       <div class="flex-1 space-y-6 text-center md:text-right">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-xs font-medium">
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-          آماده دریافت پروژه‌های جدید و چالش‌برانگیز
+          آماده دریافت پروژه‌های جدید گیمینگ و نرم‌افزاری
         </div>
         <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight text-white">
-          توسعه‌دهنده بازی‌های رایانه‌ای و <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">متخصص بک‌اند</span>
+          توسعه‌دهنده بازی‌های ویدیویی و <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">متخصص بک‌اند</span>
         </h1>
         <p class="text-slate-400 text-base md:text-lg leading-relaxed max-w-xl">
-          طراحی و پیاده‌سازی مکانیزم‌های پیچیده بازی در Unreal Engine (C++ / Blueprints) به همراه معماری بک‌اند مقیاس‌پذیر با Django و اتصال یکپارچه از طریق REST API.
+          طراحی مکانیزم‌های بازی با Unreal Engine (C++ / Blueprints)، معماری کلاینت-سرور و پیاده‌سازی سرویس‌های بک‌اند مقیاس‌پذیر با Django.
         </p>
         <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
           <a href="#projects" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg shadow-indigo-600/25 flex items-center gap-2">
-            مشاهده نمونه‌کارها <i class="fa-solid fa-arrow-left text-xs"></i>
+            مشاهده دمو و گیم‌پلی <i class="fa-solid fa-play text-xs"></i>
           </a>
           <a href="#contact" class="border border-slate-700 hover:border-slate-500 text-slate-300 font-medium px-6 py-3 rounded-xl transition bg-slate-900/50">
-            دریافت رزومه PDF
+            اطلاعات تماس
           </a>
         </div>
       </div>
 
-      <!-- کارت ویژوال پروفایل -->
+      <!-- کارت ویژوال نمایه -->
       <div class="relative flex-shrink-0">
         <div class="w-64 h-64 md:w-80 md:h-80 rounded-3xl bg-gradient-to-br from-indigo-500 to-cyan-500 p-1 glow">
           <div class="w-full h-full bg-slate-900 rounded-[22px] flex flex-col items-center justify-center p-6 text-center border border-slate-800">
-            <div class="w-24 h-24 rounded-2xl bg-indigo-600/20 border border-indigo-500/40 flex items-center justify-center text-4xl text-indigo-400 mb-4">
+            <div class="w-20 h-20 rounded-2xl bg-indigo-600/20 border border-indigo-500/40 flex items-center justify-center text-3xl text-indigo-400 mb-4">
               <i class="fa-solid fa-gamepad"></i>
             </div>
             <h3 class="text-xl font-bold text-white">فاضل بابایی</h3>
-            <p class="text-indigo-400 text-sm mt-1">Game Dev & Backend</p>
+            <p class="text-indigo-400 text-sm mt-1">Game Dev & Backend Specialist</p>
             <div class="flex gap-4 mt-5 text-slate-400 text-lg">
-              <a href="#" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
-              <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="#" class="hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://github.com/fazelbabaeirudsari" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+              <a href="mailto:your-email@example.com" class="hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
+              <a href="#" class="hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- مهارت‌ها (Skills) -->
+    <!-- مهارت‌ها -->
     <section id="skills" class="border-y border-slate-800 bg-slate-900/40 py-16">
       <div class="max-w-6xl mx-auto px-6">
         <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">مهارت‌ها و فناوری‌ها</h2>
@@ -92,81 +92,94 @@
           <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900 hover:border-indigo-500/50 transition">
             <i class="fa-solid fa-cubes text-3xl text-indigo-400 mb-3"></i>
             <h3 class="font-bold text-lg text-white">Unreal Engine</h3>
-            <p class="text-xs text-slate-400 mt-1">C++, Blueprints, UMG & JNI</p>
+            <p class="text-xs text-slate-400 mt-1">C++, Blueprints, UMG & Android JNI</p>
           </div>
-          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900 hover:border-indigo-500/50 transition">
+          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900 hover:border-emerald-500/50 transition">
             <i class="fa-brands fa-python text-3xl text-emerald-400 mb-3"></i>
-            <h3 class="font-bold text-lg text-white">Django & Python</h3>
-            <p class="text-xs text-slate-400 mt-1">REST API, ORM, Auth & Admin</p>
+            <h3 class="font-bold text-lg text-white">Django & Backend</h3>
+            <p class="text-xs text-slate-400 mt-1">REST API, PostgreSQL, Token Auth</p>
           </div>
-          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900 hover:border-indigo-500/50 transition">
+          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900 hover:border-cyan-500/50 transition">
             <i class="fa-solid fa-network-wired text-3xl text-cyan-400 mb-3"></i>
-            <h3 class="font-bold text-lg text-white">Game Backend</h3>
-            <p class="text-xs text-slate-400 mt-1">VaRest, IAP (مایکت/بازار), Server Sync</p>
+            <h3 class="font-bold text-lg text-white">Game Sync & IAP</h3>
+            <p class="text-xs text-slate-400 mt-1">VaRest, خرید درون‌برنامه‌ای، کلود سیو</p>
           </div>
-          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900 hover:border-indigo-500/50 transition">
+          <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900 hover:border-amber-500/50 transition">
             <i class="fa-solid fa-server text-3xl text-amber-400 mb-3"></i>
-            <h3 class="font-bold text-lg text-white">DevOps & Linux</h3>
-            <p class="text-xs text-slate-400 mt-1">Nginx, Gunicorn, PostgreSQL, Git</p>
+            <h3 class="font-bold text-lg text-white">DevOps & Server</h3>
+            <p class="text-xs text-slate-400 mt-1">Linux, Nginx, Gunicorn, Git</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- نمونه کارها (Projects) -->
+    <!-- نمونه‌کارها (با پلیر یوتیوب) -->
     <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
-          <span class="text-indigo-400 text-sm font-semibold uppercase tracking-wider">نمونه کارها</span>
-          <h2 class="text-3xl md:text-4xl font-black mt-2">پروژه‌های شاخص</h2>
+          <span class="text-indigo-400 text-sm font-semibold uppercase tracking-wider">Showcase</span>
+          <h2 class="text-3xl md:text-4xl font-black mt-2">نمونه‌کارها و ویدیو گیم‌پلی</h2>
         </div>
-        <p class="text-slate-400 max-w-md text-sm">مجموعه‌ای از بازی‌ها و سیستم‌هایی که از ایده تا پیاده‌سازی کامل فنی هدایت کرده‌ام.</p>
+        <p class="text-slate-400 max-w-md text-sm">دموی ویدیویی پروژه‌ها و جزئیات پیاده‌سازی فنی.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- پروژه ۱ -->
-        <div class="border border-slate-800 bg-slate-900 rounded-3xl overflow-hidden hover:border-indigo-500/40 transition group">
-          <div class="h-48 bg-gradient-to-tr from-slate-800 to-indigo-950 flex items-center justify-center border-b border-slate-800 relative">
-            <i class="fa-solid fa-car-tunnel text-5xl text-indigo-400/60 group-hover:scale-110 transition duration-300"></i>
-            <span class="absolute top-4 right-4 bg-indigo-600/80 text-white text-xs px-2.5 py-1 rounded-full backdrop-blur-md">Mobile Game</span>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- کارت ۱: پروژه اصلی همراه با امبد یوتیوب -->
+        <div class="border border-slate-800 bg-slate-900 rounded-3xl overflow-hidden hover:border-indigo-500/40 transition">
+          <!-- بخش پلیر یوتیوب -->
+          <div class="relative w-full aspect-video bg-black border-b border-slate-800">
+            <iframe 
+              class="w-full h-full" 
+              src="https://www.youtube-nocookie.com/embed/YOUR_YOUTUBE_VIDEO_ID" 
+              title="گیم‌پلی پروژه شبیه‌ساز گاراژ" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
           </div>
+
           <div class="p-6">
-            <h3 class="text-xl font-bold text-white mb-2">بازی شبیه‌ساز گاراژ (Tycoon Simulation)</h3>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-xl font-bold text-white">بازی شبیه‌ساز گاراژ (Tycoon Simulation)</h3>
+              <span class="bg-indigo-600/20 text-indigo-400 border border-indigo-500/30 text-xs px-2.5 py-0.5 rounded-full">Mobile Game</span>
+            </div>
             <p class="text-slate-400 text-sm leading-relaxed mb-4">
-              بازی شبیه‌ساز مکانیکی و تیونینگ خودرو برای موبایل. شامل سیستم سفارش‌های مرحله‌ای، مدیریت شاگردها، مکانیزم‌های مجزای صافکاری، مکانیکی و نقاشی با رابط کاربری هیبریدی (Isometric / UMG Widgets).
+              بازی شبیه‌ساز مدیریت گاراژ خودرو برای پلتفرم اندروید. شامل پیاده‌سازی سیستم سفارشات مرحله‌ای، مدیریت پرسنل و شاگردها، مکانیزم‌های مجزای مکانیکی، صافکاری و نقاشی ماشین با دوربین و رابط کاربری هیبریدی.
             </p>
             <div class="flex flex-wrap gap-2 mb-6">
               <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Unreal Engine</span>
               <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Django API</span>
-              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">In-App Purchase</span>
+              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">VaRest Plugin</span>
+              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Myket IAP</span>
             </div>
-            <div class="flex items-center gap-4">
-              <a href="#" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-1.5">
-                مشاهده دمو و جزئیات <i class="fa-solid fa-arrow-left text-xs"></i>
-              </a>
-            </div>
+            <a href="https://youtube.com/watch?v=YOUR_YOUTUBE_VIDEO_ID" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-red-400 hover:text-red-300 transition">
+              <i class="fa-brands fa-youtube text-lg"></i> مشاهده مستقیم در یوتیوب
+            </a>
           </div>
         </div>
 
-        <!-- پروژه ۲ -->
-        <div class="border border-slate-800 bg-slate-900 rounded-3xl overflow-hidden hover:border-indigo-500/40 transition group">
-          <div class="h-48 bg-gradient-to-tr from-slate-800 to-emerald-950 flex items-center justify-center border-b border-slate-800 relative">
-            <i class="fa-solid fa-plug-circle-bolt text-5xl text-emerald-400/60 group-hover:scale-110 transition duration-300"></i>
-            <span class="absolute top-4 right-4 bg-emerald-600/80 text-white text-xs px-2.5 py-1 rounded-full backdrop-blur-md">Backend & Plugin</span>
+        <!-- کارت ۲: سیستم بک‌اند و ارتباطات شبکه -->
+        <div class="border border-slate-800 bg-slate-900 rounded-3xl overflow-hidden hover:border-emerald-500/40 transition flex flex-col justify-between">
+          <div class="h-48 md:h-56 bg-gradient-to-tr from-slate-950 via-slate-900 to-emerald-950 flex items-center justify-center border-b border-slate-800 relative">
+            <i class="fa-solid fa-network-wired text-6xl text-emerald-400/50"></i>
+            <span class="absolute top-4 right-4 bg-emerald-600/30 text-emerald-300 border border-emerald-500/30 text-xs px-2.5 py-1 rounded-full">Backend Architecture</span>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-white mb-2">سیستم جامع همگام‌سازی ابری و پرداخت موبایل</h3>
-            <p class="text-slate-400 text-sm leading-relaxed mb-4">
-              بک‌اند مبتنی بر جنگو برای ذخیره ابری پیشرفت بازیکنان، مدیریت لیدربوردها و سیستم اعتبارسنجی خریدهای درون‌برنامه‌ای (Myket IAP) با اتصال مستقیم به کلاینت آنریل از طریق VaRest و JNI.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Django Rest Framework</span>
-              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">VaRest</span>
-              <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Android JNI</span>
+
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">سیستم ذخیره ابری و اعتبارسنجی پرداخت</h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                معماری کامل بک‌اند متصل به بازی جهت ذخیره امن پروفایل و دارایی‌های بازیکنان در سرور، تصدیق تراکنش‌های پرداخت درون‌برنامه‌ای مایکت در سمت سرور و مقابله با تقلب.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Django Rest Framework</span>
+                <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Nginx / Gunicorn</span>
+                <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-lg">Android JNI</span>
+              </div>
             </div>
-            <div class="flex items-center gap-4">
-              <a href="#" class="text-sm font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1.5">
-                مشاهده در گیت‌هاب <i class="fa-solid fa-arrow-left text-xs"></i>
+            <div class="pt-2">
+              <a href="https://github.com/fazelbabaeirudsari" target="_blank" class="text-sm font-semibold text-emerald-400 hover:text-emerald-300 flex items-center gap-1.5">
+                مشاهده کدها در گیت‌هاب <i class="fa-solid fa-arrow-left text-xs"></i>
               </a>
             </div>
           </div>
@@ -174,32 +187,32 @@
       </div>
     </section>
 
-    <!-- تماس و ارتباط (Contact) -->
+    <!-- تماس و ارتباط -->
     <section id="contact" class="max-w-4xl mx-auto px-6 py-20 text-center">
       <div class="border border-slate-800 bg-gradient-to-b from-slate-900 to-slate-950 p-8 md:p-14 rounded-3xl">
-        <h2 class="text-3xl font-black mb-4">آماده شروع یک پروژه مشترک هستید؟</h2>
+        <h2 class="text-3xl font-black mb-4">ارتباط برای پروژه‌ها و همکاری</h2>
         <p class="text-slate-400 max-w-xl mx-auto text-sm md:text-base mb-8">
-          اگر نیاز به توسعه بازی، طراحی معماری کلاینت/سرور، یا مشاوره فنی در Unreal Engine و بک‌اند دارید، خوشحال می‌شوم با هم در ارتباط باشیم.
+          برای سفارش پروژه‌های بازی‌سازی در Unreal Engine، توسعه بک‌اند، یا مشاوره فنی می‌توانید از راه‌های زیر با من در تماس باشید.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="mailto:your-email@example.com" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
+          <a href="mailto:your-email@example.com" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-3.5 rounded-xl transition flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/30">
             <i class="fa-solid fa-envelope"></i> ارسال ایمیل
           </a>
-          <a href="https://t.me/your_telegram_id" target="_blank" class="w-full sm:w-auto border border-slate-700 hover:border-slate-500 text-slate-200 font-semibold px-8 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
-            <i class="fa-brands fa-telegram"></i> ارتباط در تلگرام
+          <a href="https://t.me/your_telegram_id" target="_blank" class="w-full sm:w-auto border border-slate-700 hover:border-slate-500 text-slate-200 font-semibold px-8 py-3.5 rounded-xl transition flex items-center justify-center gap-2 bg-slate-900">
+            <i class="fa-brands fa-telegram text-sky-400"></i> ارتباط در تلگرام
           </a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- فوتر -->
   <footer class="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
     <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p>© ۲۰۲۶ تمامی حقوق محفوظ است.</p>
+      <p>© فاضل بابایی | تمامی حقوق محفوظ است.</p>
       <div class="flex gap-6">
-        <a href="#" class="hover:text-slate-300 transition">GitHub</a>
-        <a href="#" class="hover:text-slate-300 transition">LinkedIn</a>
-        <a href="#" class="hover:text-slate-300 transition">Telegram</a>
+        <a href="https://github.com/fazelbabaeirudsari" target="_blank" class="hover:text-slate-300 transition">گیت‌هاب</a>
+        <a href="https://t.me/your_telegram_id" target="_blank" class="hover:text-slate-300 transition">تلگرام</a>
       </div>
     </div>
   </footer>

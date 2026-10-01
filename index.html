@@ -229,3 +229,331 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazel Babaei | Unreal Engine & Game Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#111827',
+                        accent: '#3b82f6',
+                        accentHover: '#2563eb'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkBg text-slate-200 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-black tracking-wider text-white">
+                FAZEL<span class="text-accent">.DEV</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#experience" class="hover:text-accent transition">Experience</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </div>
+            <a href="#contact" class="px-4 py-2 text-xs font-semibold bg-accent hover:bg-accentHover text-white rounded-lg transition shadow-lg shadow-accent/20">
+                Let's Talk
+            </a>
+        </div>
+    </nav>
+
+    <!-- ================= 1. HERO SECTION ================= -->
+    <section class="min-h-screen flex items-center justify-center pt-24 pb-16 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center z-10">
+            <span class="px-3 py-1 text-xs font-semibold uppercase tracking-widest text-accent bg-accent/10 rounded-full border border-accent/20">
+                Available for Projects & Opportunities
+            </span>
+            
+            <!-- [محل تغییر 1]: نام و عنوان اصلی -->
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mt-6 tracking-tight">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Fazel Babaei</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-medium mt-3">
+                Unreal Engine Specialist & Backend (Django) Developer
+            </p>
+            
+            <!-- [محل تغییر 2]: خلاصه بیوگرافی کوتاه (یک یا دو خط) -->
+            <p class="text-slate-400 max-w-2xl mx-auto mt-6 text-base leading-relaxed">
+                Passionate game developer with 4+ years of experience building immersive mobile & PC simulations, specialized in Unreal Engine (C++/Blueprints), scalable Django backends, and game economy systems.
+            </p>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="px-6 py-3 rounded-lg bg-accent hover:bg-accentHover text-white font-semibold transition shadow-lg shadow-accent/25">
+                    View My Work
+                </a>
+                <!-- [محل تغییر 3]: لینک دانلود فایل رزومه PDF (اگر داری توی ریپازیتوری بذار و آدرس بده) -->
+                <a href="resume.pdf" target="_blank" class="px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-semibold border border-slate-700 transition">
+                    <i class="fa-solid fa-download mr-2"></i>Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 2. ABOUT ME ================= -->
+    <section id="about" class="py-20 bg-slate-900/50 border-y border-slate-800/60 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-xs uppercase tracking-widest text-accent font-bold text-center">Get To Know Me</h2>
+            <h3 class="text-3xl font-bold text-white text-center mt-2 mb-10">About Me</h3>
+
+            <div class="bg-cardBg p-8 rounded-2xl border border-slate-800 text-slate-300 leading-relaxed space-y-4 shadow-xl">
+                <!-- [محل تغییر 4]: پاراگراف‌های کامل درباره خودت، علاقه، سابقه و نحوه کار -->
+                <p>
+                    I am a game developer focusing on creating polished, optimized gameplay systems and robust server architectures. Over the past 4 years, I have worked across gameplay mechanics, mobile optimization, in-app purchases (IAP), and full-stack backend integrations.
+                </p>
+                <p>
+                    My core expertise centers around <strong>Unreal Engine (C++ & Blueprints)</strong> alongside <strong>Django Rest Framework</strong>, bridging the gap between client gameplay and complex cloud-based server management (user data, dynamic tasks, and real-time backend sync via VaRest).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 3. SKILLS SECTION ================= -->
+    <section id="skills" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-xs uppercase tracking-widest text-accent font-bold text-center">Capabilities</h2>
+            <h3 class="text-3xl font-bold text-white text-center mt-2 mb-12">Technical Skills</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- دسته مهارت 1: موتور بازی و گیم‌پلی -->
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-lg bg-blue-500/10 text-accent flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-3">Game Development</h4>
+                    <!-- [محل تغییر 5]: لیست مهارت‌های گیم -->
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i>Unreal Engine 4 & 5</li>
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i>C++ & Blueprints</li>
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i>Gameplay Systems & Mechanics</li>
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i>UMG & UI Optimization</li>
+                        <li><i class="fa-solid fa-check text-accent mr-2"></i>Mobile Deployment & Android JNI</li>
+                    </ul>
+                </div>
+
+                <!-- دسته مهارت 2: بک‌اند و وب سرویس -->
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-3">Backend & Database</h4>
+                    <!-- [محل تغییر 6]: لیست مهارت‌های سرور و بک‌اند -->
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><i class="fa-solid fa-check text-indigo-400 mr-2"></i>Python & Django</li>
+                        <li><i class="fa-solid fa-check text-indigo-400 mr-2"></i>Django REST Framework</li>
+                        <li><i class="fa-solid fa-check text-indigo-400 mr-2"></i>REST APIs & VaRest Integration</li>
+                        <li><i class="fa-solid fa-check text-indigo-400 mr-2"></i>PostgreSQL / SQLite</li>
+                        <li><i class="fa-solid fa-check text-indigo-400 mr-2"></i>Linux Server Management</li>
+                    </ul>
+                </div>
+
+                <!-- دسته مهارت 3: معماری و ابزارها -->
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-4">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-3">Tools & Systems</h4>
+                    <!-- [محل تغییر 7]: لیست ابزارها و مهارت‌های عمومی -->
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>Git / GitHub Version Control</li>
+                        <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>In-App Purchases (IAP)</li>
+                        <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>Team & Project Management</li>
+                        <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>Game Economy Balancing</li>
+                        <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>Performance Profiling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 4. EXPERIENCE SECTION ================= -->
+    <section id="experience" class="py-20 bg-slate-900/50 border-y border-slate-800/60 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-xs uppercase tracking-widest text-accent font-bold text-center">Career Path</h2>
+            <h3 class="text-3xl font-bold text-white text-center mt-2 mb-12">Work Experience</h3>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-slate-800">
+                
+                <!-- [محل تغییر 8 - شغل/پروژه 1]: آخرین یا مهم‌ترین تجربه کاری -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center">
+                    <div class="hidden md:block w-1/2 pr-8 text-right">
+                        <span class="text-accent font-bold">Lead Game & Backend Developer</span>
+                        <p class="text-sm text-slate-400">Auto Garage Tycoon Project</p>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-darkBg"></div>
+                    <div class="pl-12 md:pl-8 md:w-1/2">
+                        <span class="md:hidden text-accent font-bold block">Lead Game & Backend Developer</span>
+                        <span class="text-xs text-slate-500 font-semibold uppercase">2022 — Present</span>
+                        <p class="text-sm text-slate-300 mt-2">
+                            Designed the entire game architecture, integrated Django backend with client-side VaRest, implemented dynamic quest engines, apprentice management, and in-app monetization.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- [محل تغییر 9 - شغل/پروژه 2]: تجربه کاری قبلی -->
+                <div class="relative flex flex-col md:flex-row items-start md:items-center">
+                    <div class="hidden md:block w-1/2 pr-8 text-right">
+                        <span class="text-accent font-bold">Unreal Engine Developer</span>
+                        <p class="text-sm text-slate-400">Indie & Client Projects</p>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-slate-600 rounded-full border-4 border-darkBg"></div>
+                    <div class="pl-12 md:pl-8 md:w-1/2">
+                        <span class="md:hidden text-accent font-bold block">Unreal Engine Developer</span>
+                        <span class="text-xs text-slate-500 font-semibold uppercase">2020 — 2022</span>
+                        <p class="text-sm text-slate-300 mt-2">
+                            Built custom gameplay mechanics, interactive UI widgets, physics simulations, and optimized mobile build pipelines for Android targets.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 5. PROJECTS & VIDEOS ================= -->
+    <section id="projects" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-xs uppercase tracking-widest text-accent font-bold text-center">Portfolio</h2>
+            <h3 class="text-3xl font-bold text-white text-center mt-2 mb-12">Featured Projects</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- [محل تغییر 10]: پروژه شماره ۱ (شامل ویدیو یوتیوب) -->
+                <div class="bg-cardBg rounded-2xl overflow-hidden border border-slate-800 flex flex-col">
+                    <div class="relative pb-[56.25%] h-0 overflow-hidden bg-black">
+                        <!-- آیدی ویدیوی یوتیوب خودت را به جای dQw4w9WgXcQ قرار بده -->
+                        <iframe class="absolute top-0 left-0 w-full h-full" 
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                title="Project Showcase 1" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="text-xl font-bold text-white mb-2">Car Garage Tycoon & Simulation</h4>
+                        <p class="text-sm text-slate-400 mb-4 flex-grow">
+                            A mobile simulation game featuring repair mechanics, staff hiring, live customer orders, and real-time backend synchronization.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-semibold text-slate-300">
+                            <span class="bg-slate-800 px-2.5 py-1 rounded">Unreal Engine</span>
+                            <span class="bg-slate-800 px-2.5 py-1 rounded">Django REST</span>
+                            <span class="bg-slate-800 px-2.5 py-1 rounded">Android JNI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- [محل تغییر 11]: پروژه شماره ۲ (شامل ویدیو یوتیوب دوم) -->
+                <div class="bg-cardBg rounded-2xl overflow-hidden border border-slate-800 flex flex-col">
+                    <div class="relative pb-[56.25%] h-0 overflow-hidden bg-black">
+                        <!-- آیدی ویدیوی یوتیوب خودت را به جای M7lc1UVf-VE قرار بده -->
+                        <iframe class="absolute top-0 left-0 w-full h-full" 
+                                src="https://www.youtube.com/embed/M7lc1UVf-VE" 
+                                title="Project Showcase 2" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="text-xl font-bold text-white mb-2">Mechanics & Gameplay Tech Demo</h4>
+                        <p class="text">Unreal Engine</span>
+                            <span class="bg-slate-800 px-2.5 py-1 rounded">Django REST</span>
+                            <span class="bg-slate-800 px-2.5 py-1 rounded">Android JNI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- [محل تغییر 11]: پروژه شماره ۲ (شامل ویدیو یوتیوب دوم) -->
+                <div class="bg-cardBg rounded-2xl overflow-hidden border border-slate-800 flex flex-col">
+                    <div class="relative pb-[56.25%] h-0 overflow-hidden bg-black">
+                        <!-- آیدی ویدیوی یوتیوب خودت را به جای M7lc1UVf-VE قرار بده -->
+                        <iframe class="absolute top-0 left-0 w-full h-full" 
+                                src="https://www.youtube.com/embed/M7lc1UVf-VE" 
+                                title="Project Showcase 2" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="text-xl font-bold text-white mb-2">Mechanics & Gameplay Tech Demo</h4>
+                        <p class="text-sm text-slate-400 mb-4 flex-grow">
+                            Demonstration of core game loops, interactive UI widgets, state machines, and physics-based interactions in Unreal.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-semibold text-slate-300">
+                            <span class="bg-slate-800 px-2.5 py-1 rounded">C++ / Blueprints</span>
+">University Name • 2012 — 2016</p>
+                </div>
+
+                <!-- [محل تغییر 13]: مدارک، دوره‌ها یا سرتیفیکیت‌ها -->
+                <div class="bg-cardBg p-6 rounded-xl border border-slate-800">
+                    <span class="text-xs text-accent font-bold uppercase">Certification</span>
+                    <h4 class="text-lg font-bold text-white mt-1">Unreal Engine & Backend Specialization</h4>
+                    <p class="text-sm text-slate-400 mt-1">Online Certifications & Self-Directed Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 7. CONTACT / FOOTER ================= -->
+    <section id="contact" class="py-20 px-6 border-t border-slate-800">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-xs uppercase tracking-widest text-accent font-bold">Get In Touch</h2>
+            <h3 class="text-3xl font-bold text-white mt-2 mb-4">Let's Build Something Great</h3>
+            <p class="text-slate-400 mb-8 text-sm">
+                Feel free to reach out for collaborations, project inquiries, or job opportunities.
+            </p>
+
+            <!-- [محل تغییر 14]: ایمیل مستقیم شما -->
+            <a href="mailto:your-email@example.com" class="inline-block px-8 py-4 bg-accent hover:bg-accentHover text-white font-bold rounded-xl transition shadow-lg shadow-accent/25 mb-10">
+                <i class="fa-regular fa-envelope mr-2"></i>Send Email
+            </a>
+
+            <!-- [محل تغییر 15]: آدرس شبکه‌های اجتماعی -->
+            <div class="flex justify-center space-x-6 text-2xl text-slate-400">
+                <!-- لینک گیت‌هاب -->
+                <a href="https://github.com/fazelbabaeirudsari" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+                <!-- لینک لینکدین -->
+                <a href="https://linkedin.com/in/your-profile" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+                <!-- لینک یوتیوب -->
+                <a href="https://youtube.com" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-youtube"></i></a>
+                <!-- لینک تلگرام -->
+                <a href="https://t.me/your-username" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+
+            <p class="text-xs text-slate-600 mt-12">
+                © 2026 Fazel Babaei. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
